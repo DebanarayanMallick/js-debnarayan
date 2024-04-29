@@ -9,7 +9,7 @@
    let fullname;
 
    let id = Symbol("123");
-   let anotherId = Symbol("123");
+   const anotherId = Symbol("123");
 //    console.log(id === anotherId); // false
 
    const bigNumber = 34435246426462462n; // Bigint datatypes
@@ -29,4 +29,12 @@
         console.log("Hello World");
  }
 
- console.log(typeof temp);
+ console.log(typeof myFunction);  // Function Datatypes
+ console.log(typeof temp);        // object Datatypes
+ console.log(typeof name);        // string datatypes
+ console.log(typeof value);         // number datatypes
+ console.log(typeof isLoginId);     // boolean datatypes
+ console.log(typeof fullname);   // undefined datatyeps
+ console.log(typeof bigNumber);      // bigint datatypes
+ console.log(typeof myObj);       // object datatypes
+ console.log(typeof myFunction);  // function datatyeps
