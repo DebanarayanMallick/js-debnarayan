@@ -38,3 +38,27 @@
  console.log(typeof bigNumber);      // bigint datatypes
  console.log(typeof myObj);       // object datatypes
  console.log(typeof myFunction);  // function datatyeps
+
+ // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  // Stack(Primitive) , Heap (Non primitive)
+
+//   in stack memory we get copy only 
+
+  let myYoutubename = "debmallick";
+  let anothername = myYoutubename;
+  anothername = "debstorm";
+  console.log(anothername);
+  console.log(myYoutubename);
+
+  // in heap memory we get reference value and value also got change.
+
+  let userOne = {
+   email: "deb@gmail.com",
+   upi: "deb@ybl"
+  }
+  let userTwo = userOne;
+  userTwo.email = "debnarayan@gmail.com";
+  userTwo.upi ="8456862474@paytm";
+  console.log(userOne);
+  console.log(userTwo);
